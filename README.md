@@ -1,19 +1,17 @@
 # docker-asuswrt-merlin-build-env
 Asus Merlin build environment in Docker
 
-# Preapare image:
-```
-docker build -t "asuswrt-merlin-build-env" .
-```
+[![DockerHub Badge](http://dockeri.co/image/yozik04/asuswrt-merlin-build-env)](https://hub.docker.com/r/yozik04/asuswrt-merlin-build-env/)
 
-# Checkout Asus merlin repo locally:
+# Steps
+## Checkout Asus merlin repo locally:
 ```
 git clone https://github.com/RMerl/asuswrt-merlin.ng.git
 ```
 
 # Run image:
 ```
-docker run -v asuswrt-merlin.ng:/home/merlin/asuswrt-merlin-root -t -i asuswrt-merlin-build-env
+docker run -v asuswrt-merlin.ng:/home/merlin/asuswrt-merlin-root -t -i yozik04/asuswrt-merlin-build-env
 ```
 
 # Start build in the running image:
